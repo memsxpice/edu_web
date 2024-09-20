@@ -8,7 +8,7 @@ const InicioS = () => {
     return (
         <div className='container'>
             <div className='header'>
-                <div className='textTitle'>{action} Edu-Web</div>
+                <div className='textTitle'>{action} en Edu-Web</div>
                 <div className="underline"></div>
             </div>
             <div className="inputs">
