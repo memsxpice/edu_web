@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Routes, Link  } from "react-router-dom";
 import './inicio_sesion.css';
 
 const InicioS = () => {
@@ -19,7 +20,7 @@ const InicioS = () => {
                     <input type="password" placeholder='Contraseña'/>
                 </div>
             </div>
-            <div className="forgot-password">¿Olvidaste tu contraseña? <span>Clik aqui</span></div>
+            <div className="forgot-password">¿Olvidaste tu contraseña? <span><Link to="/rescontra">Clik aqui</Link></span></div>
             <div className="submit-container">
                 <div className={action == "Iniciar Sesion"?"submit gray":"submit"} onClick={()=>{seAction("Registro")}}>Registrarse</div>
                 <div className={action == "Registro"?"submit gray":"submit"} onClick={()=>{seAction("Iniciar Sesion")}}>Iniciar Sesion</div>
@@ -29,4 +30,4 @@ const InicioS = () => {
 }
 
 
-export default InicioS
+export default InicioS;
